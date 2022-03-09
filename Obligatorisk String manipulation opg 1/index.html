@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>String Manipulation</h1>
+        <div id="app">
+            <input id="inputField" v-model="word" placeholder="Word"/>   
+                <button id="button" v-on:click="Skrivetord()" >
+                    Vis alle varianter
+                </button>
+            <div id="outputField" v-if="word">
+                <ul>
+                    <li>{{message}}</li>
+                    <li>{{message1}}</li>
+                    <li>{{message2}}</li>
+                    <li>{{message3}}</li>
+                    <li>{{message4}}</li>
+                    <li>{{message5}}</li>
+                </ul>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary">{{message}}</li>
+                <li class="list-group-item list-group-item-secondary">{{message1}}</li>
+                <li class="list-group-item list-group-item-success">{{message2}}</li>
+                <li class="list-group-item list-group-item-danger">{{message3}}</li>
+                <li class="list-group-item list-group-item-warning">{{message4}}</li>
+                <li class="list-group-item list-group-item-info">{{message5}}</li>
+            </ul>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
